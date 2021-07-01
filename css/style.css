@@ -14,7 +14,6 @@ body {
 .wrapper {
     height: 100vh;
     width: 100%;
-    color: white;
 }
 
 .wrapper main p,
@@ -45,9 +44,25 @@ main {
     height: calc(100vh - 100px);
 }
 
-h2 {
+.container {
+    width: calc(100% - 250px);
+    float: left;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+h2,
+h3 {
     font-weight: 800;
     color: white;
+}
+
+.wrapper a {
+    color: white;
+}
+
+li {
+    font-size: 14px;
 }
 
 
@@ -56,18 +71,14 @@ h2 {
 
 /* MAIN */
 
+
+/* SIDEBAR */
+
 .control-panel {
     width: 250px;
     float: left;
     justify-content: space-between;
     height: 100%;
-}
-
-.container {
-    width: calc(100% - 250px);
-    float: left;
-    height: 100%;
-    overflow-y: scroll;
 }
 
 .top-menu {
@@ -82,16 +93,86 @@ h2 {
     padding: 10px;
 }
 
+
+/* Sidebar top */
+
 .main-logo {
     width: 100%;
     height: 80px;
     padding: 15px;
 }
 
+.main-logo img {
+    width: 80%;
+}
+
 .action-menu {
     width: 100%;
     margin: 15px 0px;
 }
+
+.top-menu ul {
+    line-height: 35px;
+}
+
+.control-panel ul li {
+    list-style: none;
+}
+
+.control-panel .action-menu ul li {
+    padding-left: 15px;
+}
+
+.control-panel ul li img {
+    height: 25px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.wrapper .control-panel ul .active {
+    border-left: 2px solid limegreen;
+}
+
+.wrapper .control-panel ul .active a {
+    opacity: 1;
+}
+
+.control-panel .playlist-menu {
+    padding-left: 15px;
+}
+
+.new-playlist h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.new-playlist .plus {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    background-color: white;
+    margin-right: 5px;
+    color: black;
+}
+
+.new-playlist a div {
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+.new-playlist a div:hover {
+    opacity: 1;
+}
+
+.new-playlist a span {
+    line-height: 35px;
+}
+
+
+/* Sidebar bottom */
 
 .install-app {
     height: 30px;
@@ -105,6 +186,9 @@ h2 {
 .user-account {
     height: 30px;
 }
+
+
+/* FINE SIDEBAR */
 
 .container .cta-upgrade {
     width: calc(100% - 250px);
@@ -209,20 +293,22 @@ footer .foot-central {
 }
 
 .debug .top-menu {
-    background-color: rgb(132, 90, 174);
+    background-color: rgb(0, 0, 0);
 }
 
-.debug .main-logo {
+
+/* .debug .main-logo {
     border: 1px solid red;
-}
+} */
 
-.debug .action-menu {
+
+/* .debug .action-menu {
     border: 1px solid orange;
 }
 
 .debug .playlist-menu {
     border: 1px solid yellow;
-}
+} */
 
 .install-app {
     border: 1px solid salmon;
