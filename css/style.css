@@ -298,6 +298,9 @@ li {
 
 /* Fine menu orizzontale */
 
+
+/* BOX CANZONI */
+
 .container .songs {
     flex-wrap: wrap;
     margin: 20px 0px;
@@ -310,21 +313,54 @@ li {
 .container .suggested .song {
     width: calc(100% / 6 - 10px);
     margin-right: 10px;
-    height: 300px;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
-.container .suggested .song .song-img {
+.container .suggested .img {
     width: 100%;
-    height: 200px;
-    margin: 0 auto;
+    height: 100%;
+    position: relative;
 }
 
-.container .suggested .song .song-txt {
+.container .suggested img {
     width: 100%;
-    margin-top: 10px;
-    height: 50px;
 }
+
+.container .suggested .song-txt {
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.song-txt .subtitle-song {
+    font-size: 13px;
+    color: gray;
+}
+
+.container .suggested .far {
+    /* posiziono e nascondo l'icona */
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.container .suggested .song:hover img {
+    /* metto opacità all'immagine al passare del mouse */
+    opacity: 0.5;
+}
+
+.container .suggested .song:hover i {
+    /* faccio comparire icona */
+    display: block;
+}
+
+
+/* FINE BOX CANZONI */
 
 
 /* FINE MAIN */
@@ -406,9 +442,10 @@ footer .foot-central {
     border: 1px solid orangered;
 } */
 
-.debug .container .cta-upgrade {
+
+/* .debug .container .cta-upgrade {
     background-color: rgba(0, 0, 0, 0.2);
-}
+} */
 
 
 /* .debug .container .button-upgrade {
@@ -421,22 +458,25 @@ footer .foot-central {
     height: 50px;
 } */
 
-.debug .songs {
+
+/* .debug .songs {
     height: 500px;
     background-color: teal;
-}
+} */
 
-.debug .container .suggested .song {
+
+/* .debug .container .suggested .song {
     background-color: thistle;
-}
+} */
 
-.debug .container .suggested .song .song-img {
+
+/* .debug .container .suggested .song .song-img {
     border: 1px solid red;
 }
 
 .debug .container .suggested .song .song-txt {
     border: 1px solid salmon;
-}
+} */
 
 .debug footer .foot-side {
     background-color: seagreen;
