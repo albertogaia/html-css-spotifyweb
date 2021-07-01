@@ -17,8 +17,8 @@ body {
     color: white;
 }
 
-.wrapper p,
-.wrapper a {
+.wrapper main p,
+.wrapper main a {
     text-decoration: none;
     opacity: 0.6;
 }
@@ -171,6 +171,19 @@ h2 {
 footer {
     width: 100%;
     height: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .foot-side {
+    width: 20%;
+    height: 60px;
+}
+
+footer .foot-central {
+    width: 60%;
+    height: 90px;
+    justify-content: center;
 }
 
 
@@ -248,4 +261,22 @@ footer {
 
 .debug .container .suggested .song .song-txt {
     border: 1px solid salmon;
+}
+
+.debug footer .foot-side {
+    background-color: seagreen;
+}
+
+.debug footer .foot-central {
+    background-color: springgreen;
+}
+
+.debug footer .foot-central .player-cmd {
+    height: 30px;
+    border: 1px solid red;
+}
+
+.debug footer .foot-central .progress-bar {
+    height: 50px;
+    border: 1px solid rgb(205, 143, 49);
 }
