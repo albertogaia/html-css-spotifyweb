@@ -49,6 +49,7 @@ main {
     float: left;
     height: 100%;
     overflow-y: scroll;
+    background-color: rgb(23, 23, 23);
 }
 
 h2,
@@ -219,20 +220,40 @@ li {
 
 /* FINE SIDEBAR */
 
+
+/* INIZIO CONTENITORE PRINCIPALE */
+
+
+/* cta upgrade */
+
 .container .cta-upgrade {
     width: calc(100% - 250px);
     height: 80px;
-    padding: 10px;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 0;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .container .button-upgrade {
     float: right;
-    height: 100%;
-    width: 250px;
+    padding: 10px 35px;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: white;
+    font-weight: 400;
+    border: 1px solid white;
+    border-radius: 30px;
+    opacity: 1;
+    margin-right: 10px;
+}
+
+.container .button-upgrade:hover {
+    transform: scale(1.1);
 }
 
 .container .discover-menu {
@@ -320,9 +341,10 @@ footer .foot-central {
     background-color: purple;
 } */
 
-.debug .container {
+
+/* .debug .container {
     background-color: green;
-}
+} */
 
 
 /* .debug .top-menu {
@@ -358,9 +380,10 @@ footer .foot-central {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
-.debug .container .button-upgrade {
+
+/* .debug .container .button-upgrade {
     border: 1px solid salmon;
-}
+} */
 
 .debug .container .discover-menu {
     background-color: sandybrown;
