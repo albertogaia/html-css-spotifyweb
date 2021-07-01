@@ -389,6 +389,12 @@ footer .foot-side {
     width: 20%;
 }
 
+footer .foot-central {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* Footer Left */
 
@@ -401,11 +407,13 @@ footer .now-actions {
     color: white;
 }
 
-footer .now-actions i {
-    opacity: 0.6
+footer .foot-side i {
+    color: white;
+    opacity: 0.6;
+    padding: 5px;
 }
 
-footer .now-actions i:hover {
+footer .foot-side i:hover {
     opacity: 1;
     cursor: pointer;
 }
@@ -447,13 +455,6 @@ footer .now-playing img {
 
 
 /* Footer centrale */
-
-footer .foot-central {
-    width: 60%;
-    /* height: 90px; */
-    justify-content: center;
-    align-items: center;
-}
 
 .player-cmd {
     text-align: center;
@@ -528,6 +529,25 @@ footer .foot-central {
 
 
 /* Fine footer centrale */
+
+
+/* Footer destro */
+
+#foot-right.foot-side {
+    align-items: center;
+}
+
+#foot-right .progression {
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+#foot-right .progress-bar {
+    width: 80%;
+}
+
+
+/* Fine footer destro */
 
 
 /* FINE FOOTER */
