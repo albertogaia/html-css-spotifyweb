@@ -381,11 +381,61 @@ footer {
     height: 100px;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(52, 52, 52);
 }
 
 footer .foot-side {
-    width: 20%;
-    height: 60px;
+    padding: 0px 10px;
+}
+
+footer .now-playing {
+    align-items: center;
+}
+
+footer .now-actions {
+    margin-left: 30px;
+    color: white;
+}
+
+footer .now-actions i {
+    opacity: 0.6
+}
+
+footer .now-actions i:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+footer .now-txt {
+    padding-left: 10px;
+}
+
+footer .now-playing .now-title {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer .now-playing .now-title:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.now-playing .now-artist {
+    color: grey;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+footer .now-playing .now-artist:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+footer .now-playing img {
+    width: 50px;
+    cursor: pointer;
 }
 
 footer .foot-central {
@@ -404,102 +454,88 @@ footer .foot-central {
     background-color: blue;
 }
 
-
-/* .debug .bottom-menu {
+.debug .bottom-menu {
     background-color: rebeccapurple;
     min-height: 100px;
-} */
+}
 
-
-/* .debug main {
+.debug main {
     background-color: purple;
-} */
+}
 
-
-/* .debug .container {
+.debug .container {
     background-color: green;
-} */
+}
 
-
-/* .debug .top-menu {
+.debug .top-menu {
     background-color: rgb(0, 0, 0);
-} */
+}
 
-
-/* .debug .main-logo {
+.debug .main-logo {
     border: 1px solid red;
-} */
+}
 
-
-/* .debug .action-menu {
+.debug .action-menu {
     border: 1px solid orange;
 }
 
 .debug .playlist-menu {
     border: 1px solid yellow;
-} */
+}
 
-
-/* .install-app {
+.install-app {
     border: 1px solid salmon;
     height: 30px;
-} */
+}
 
-
-/* .debug .user-account {
+.debug .user-account {
     border: 1px solid orangered;
-} */
+}
 
-
-/* .debug .container .cta-upgrade {
+.debug .container .cta-upgrade {
     background-color: rgba(0, 0, 0, 0.2);
-} */
+}
 
-
-/* .debug .container .button-upgrade {
+.debug .container .button-upgrade {
     border: 1px solid salmon;
-} */
+}
 
-
-/* .debug .container .discover-menu {
+.debug .container .discover-menu {
     background-color: sandybrown;
     height: 50px;
-} */
+}
 
-
-/* .debug .songs {
+.debug .songs {
     height: 500px;
     background-color: teal;
-} */
+}
 
-
-/* .debug .container .suggested .song {
+.debug .container .suggested .song {
     background-color: thistle;
-} */
+}
 
-
-/* .debug .container .suggested .song .song-img {
+.debug .container .suggested .song .song-img {
     border: 1px solid red;
 }
 
 .debug .container .suggested .song .song-txt {
     border: 1px solid salmon;
-} */
-
-.debug footer .foot-side {
-    background-color: seagreen;
 }
 
-.debug footer .foot-central {
+.debug .foot-side {
+    /* background-color: seagreen; */
+}
+
+.debug .foot-central {
     background-color: springgreen;
 }
 
-.debug footer .foot-central .player-cmd {
+.debug .foot-central .player-cmd {
     height: 30px;
     border: 1px solid red;
 }
 
-.debug footer .foot-central .progress-bar {
+.debug .foot-central .progress-bar {
     height: 50px;
     border: 1px solid rgb(205, 143, 49);
 }
