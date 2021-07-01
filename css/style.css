@@ -49,7 +49,7 @@ main {
     float: left;
     height: 100%;
     overflow-y: scroll;
-    background-color: rgb(23, 23, 23);
+    background-color: rgb(20, 19, 34);
 }
 
 h2,
@@ -190,11 +190,6 @@ li {
     border: 1px solid rgb(91, 91, 91);
 }
 
-
-/* .user-account {
-    height: 30px;
-} */
-
 .user-account .profile-pic {
     display: inline-block;
     width: 25px;
@@ -230,12 +225,13 @@ li {
     width: calc(100% - 250px);
     height: 80px;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     right: 0;
     justify-content: flex-end;
     align-items: center;
+    z-index: 999;
 }
 
 .container .button-upgrade {
@@ -262,6 +258,7 @@ li {
 .container .discover-menu {
     width: 100%;
     margin-top: 80px;
+    padding: 15px;
     margin-bottom: 15px;
     align-self: center;
     justify-content: center;
@@ -308,6 +305,12 @@ li {
 
 .container .suggested {
     padding: 15px;
+}
+
+.container .suggested p {
+    margin: 10px 0px;
+    color: grey;
+    font-size: 14px;
 }
 
 .container .suggested .song {
