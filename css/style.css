@@ -14,6 +14,17 @@ body {
 .wrapper {
     height: 100vh;
     width: 100%;
+    color: white;
+}
+
+.wrapper p,
+.wrapper a {
+    text-decoration: none;
+    opacity: 0.6;
+}
+
+.wrapper a:hover {
+    opacity: 1;
 }
 
 .clearfix::after {
@@ -34,6 +45,11 @@ main {
     height: calc(100vh - 100px);
 }
 
+h2 {
+    font-weight: 800;
+    color: white;
+}
+
 
 /* FINE COMMON */
 
@@ -51,6 +67,7 @@ main {
     width: calc(100% - 250px);
     float: left;
     height: 100%;
+    overflow-y: scroll;
 }
 
 .top-menu {
@@ -90,15 +107,59 @@ main {
 }
 
 .container .cta-upgrade {
-    width: 100%;
+    width: calc(100% - 250px);
     height: 80px;
     padding: 10px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 0;
 }
 
 .container .button-upgrade {
     float: right;
     height: 100%;
     width: 250px;
+}
+
+.container .discover-menu {
+    width: 100%;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    align-self: center;
+}
+
+.container .discover-menu nav {
+    margin: auto;
+    height: 80px;
+}
+
+.container .songs {
+    flex-wrap: wrap;
+    margin: 20px 0px;
+}
+
+.container .suggested {
+    padding: 15px;
+}
+
+.container .suggested .song {
+    width: calc(100% / 6 - 10px);
+    margin-right: 10px;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.container .suggested .song .song-img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.container .suggested .song .song-txt {
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
 }
 
 
@@ -164,5 +225,27 @@ footer {
 }
 
 .debug .container .button-upgrade {
+    border: 1px solid salmon;
+}
+
+.debug .container .discover-menu {
+    background-color: sandybrown;
+    height: 50px;
+}
+
+.debug .songs {
+    height: 500px;
+    background-color: teal;
+}
+
+.debug .container .suggested .song {
+    background-color: thistle;
+}
+
+.debug .container .suggested .song .song-img {
+    border: 1px solid red;
+}
+
+.debug .container .suggested .song .song-txt {
     border: 1px solid salmon;
 }
