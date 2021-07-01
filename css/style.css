@@ -386,7 +386,11 @@ footer {
 
 footer .foot-side {
     padding: 0px 10px;
+    width: 20%;
 }
+
+
+/* Footer Left */
 
 footer .now-playing {
     align-items: center;
@@ -438,11 +442,92 @@ footer .now-playing img {
     cursor: pointer;
 }
 
+
+/* Fine Footer Left */
+
+
+/* Footer centrale */
+
 footer .foot-central {
     width: 60%;
-    height: 90px;
+    /* height: 90px; */
     justify-content: center;
+    align-items: center;
 }
+
+.player-cmd {
+    text-align: center;
+    color: white;
+    align-items: center;
+}
+
+.player-cmd i {
+    margin: 0px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player-cmd .play {
+    font-size: 34px;
+}
+
+.player-cmd .play:hover {
+    transform: scale(1.1);
+}
+
+.progression {
+    margin-top: 10px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progression .time {
+    color: white;
+    font-size: 10px;
+}
+
+.progress-bar {
+    width: 80%;
+    height: 4px;
+    background-color: grey;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    height: 4px;
+    border-radius: 5px;
+    background-color: rgb(233, 233, 233);
+    cursor: pointer;
+}
+
+.progress-bar:hover .loading {
+    background-color: limegreen;
+}
+
+.circle {
+    display: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    background-color: white;
+}
+
+.progress-bar:hover .circle {
+    display: block;
+}
+
+
+/* Fine footer centrale */
 
 
 /* FINE FOOTER */
@@ -483,7 +568,7 @@ footer .foot-central {
     border: 1px solid yellow;
 }
 
-.install-app {
+.debug .install-app {
     border: 1px solid salmon;
     height: 30px;
 }
@@ -527,15 +612,18 @@ footer .foot-central {
 }
 
 .debug .foot-central {
-    background-color: springgreen;
+    /* background-color: springgreen; */
 }
 
+
+/* 
 .debug .foot-central .player-cmd {
     height: 30px;
     border: 1px solid red;
-}
+} */
 
-.debug .foot-central .progress-bar {
+
+/* .debug .foot-central .progress-bar {
     height: 50px;
     border: 1px solid rgb(205, 143, 49);
-}
+} */
