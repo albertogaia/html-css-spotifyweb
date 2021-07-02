@@ -399,8 +399,8 @@ footer {
 
 footer .foot-side {
     padding: 0px 10px;
-    width: 20%;
-    justify-content: center;
+    /* width: 20%; */
+    /* justify-content: center; */
 }
 
 footer .foot-central {
@@ -501,6 +501,7 @@ footer .now-playing img {
 .progression .time {
     color: white;
     font-size: 10px;
+    margin: 0px 10px;
 }
 
 .foot-central .progress-bar {
@@ -549,6 +550,10 @@ footer .now-playing img {
 
 /* Footer destro */
 
+#foot-right {
+    justify-self: flex-end;
+}
+
 #foot-right.foot-side {
     align-items: center;
 }
@@ -556,6 +561,7 @@ footer .now-playing img {
 #foot-right .progression {
     margin-top: 0px;
     padding-left: 10px;
+    width: 150px;
     min-width: 100px
 }
 
