@@ -1,0 +1,8 @@
+            @media (max-height: 600px) {
+                .container .cta-upgrade {
+                    display: none;
+                }
+                .container .discover-menu {
+                    margin-top: 20px;
+                }
+            }
