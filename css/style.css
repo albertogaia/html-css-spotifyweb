@@ -76,11 +76,12 @@ li {
 /* SIDEBAR */
 
 .control-panel {
-    width: 250px;
+    max-width: 250px;
     float: left;
     justify-content: space-between;
     height: 100%;
     background: #000;
+    overflow: hidden;
 }
 
 .top-menu {
@@ -105,6 +106,11 @@ li {
 
 .main-logo img {
     width: 80%;
+}
+
+.main-logo img:nth-child(2) {
+    width: 50px;
+    display: none;
 }
 
 .action-menu {
@@ -231,7 +237,8 @@ li {
     right: 0;
     justify-content: flex-end;
     align-items: center;
-    z-index: 999;
+    z-index: 99;
+    overflow: hidden;
 }
 
 .container .button-upgrade {
@@ -266,7 +273,8 @@ li {
 
 .container .discover-menu nav {
     margin: auto;
-    height: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container .discover-menu nav a {
@@ -274,6 +282,7 @@ li {
     text-transform: uppercase;
     font-size: 14px;
     position: relative;
+    line-height: 30px;
 }
 
 .container .discover-menu nav .active {
@@ -378,15 +387,20 @@ li {
 
 footer {
     width: 100%;
-    height: 100px;
+    min-height: 100px;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(52, 52, 52);
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
 }
 
 footer .foot-side {
     padding: 0px 10px;
     width: 20%;
+    justify-content: center;
 }
 
 footer .foot-central {
@@ -405,6 +419,7 @@ footer .now-playing {
 footer .now-actions {
     margin-left: 30px;
     color: white;
+    justify-content: center;
 }
 
 footer .foot-side i {
@@ -479,7 +494,7 @@ footer .now-playing img {
 .progression {
     margin-top: 10px;
     width: 50%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -488,8 +503,9 @@ footer .now-playing img {
     font-size: 10px;
 }
 
-.progress-bar {
+.foot-central .progress-bar {
     width: 80%;
+    min-width: 150px;
     height: 4px;
     background-color: grey;
     position: relative;
@@ -540,10 +556,16 @@ footer .now-playing img {
 #foot-right .progression {
     margin-top: 0px;
     padding-left: 10px;
+    min-width: 100px
 }
 
 #foot-right .progress-bar {
     width: 80%;
+    height: 4px;
+    background-color: grey;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -551,6 +573,74 @@ footer .now-playing img {
 
 
 /* FINE FOOTER */
+
+
+/* MEDIA QUERY */
+
+@media (max-width: 1100px) {
+    .container .suggested .song {
+        width: calc(100% / 4 - 10px);
+    }
+    #foot-left .now-playing img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 700px) {
+    .container .suggested .song {
+        width: calc(100% / 2 - 10px);
+    }
+    #foot-right {
+        flex-wrap: wrap;
+    }
+    #foot-right .progression {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        height: calc(100vh - 120px);
+    }
+    .control-panel {
+        width: 70px;
+    }
+    .container {
+        width: calc(100% - 70px);
+    }
+    .container .suggested .song {
+        width: calc(100% / 2 - 10px);
+    }
+    .main-logo img:first-child {
+        display: none;
+    }
+    .main-logo img:nth-child(2) {
+        display: block;
+        width: 40px;
+    }
+    .action-menu ul li span {
+        display: none;
+    }
+    .playlist-menu {
+        display: none;
+    }
+    .bottom-menu span {
+        display: none;
+    }
+    footer {
+        height: 120px;
+    }
+    #foot-left .now-playing {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    #foot-left .now-playing img {
+        width: 40px;
+    }
+    #foot-left .now-playing .now-actions {
+        margin: 0px;
+    }
+}
 
 
 /* DEBUG ZONE */
@@ -628,22 +718,19 @@ footer .now-playing img {
 }
 
 .debug .foot-side {
-    /* background-color: seagreen; */
+    background-color: seagreen;
 }
 
 .debug .foot-central {
-    /* background-color: springgreen; */
+    background-color: springgreen;
 }
 
-
-/* 
 .debug .foot-central .player-cmd {
     height: 30px;
     border: 1px solid red;
-} */
+}
 
-
-/* .debug .foot-central .progress-bar {
+.debug .foot-central .progress-bar {
     height: 50px;
     border: 1px solid rgb(205, 143, 49);
-} */
+}
