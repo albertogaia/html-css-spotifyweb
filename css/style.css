@@ -124,10 +124,6 @@ li {
     margin: 15px 0px;
 }
 
-.top-menu ul {
-    line-height: 35px;
-}
-
 .control-panel ul li {
     list-style: none;
 }
@@ -150,9 +146,22 @@ li {
     opacity: 1;
 }
 
-.control-panel .playlist-menu {
+.top-menu ul {
+    line-height: 35px;
+}
+
+.top-menu {
+    overflow: hidden;
+}
+
+.top-menu .playlist-menu {
     padding-left: 15px;
-    overflow-y: scroll;
+    overflow: hidden;
+}
+
+.control-panel .playlist-name {
+    overflow: auto;
+    height: 80%;
 }
 
 .new-playlist h3 {
