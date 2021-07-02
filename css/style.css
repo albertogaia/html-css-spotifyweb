@@ -86,9 +86,10 @@ li {
 }
 
 .top-menu {
+    overflow: hidden;
     width: 100%;
     height: calc(100% - 100px);
-    min-height: 400px;
+    min-height: 70px;
     padding-right: 20px;
 }
 
@@ -148,10 +149,6 @@ li {
 
 .top-menu ul {
     line-height: 35px;
-}
-
-.top-menu {
-    overflow: hidden;
 }
 
 .top-menu .playlist-menu {
@@ -632,6 +629,9 @@ footer .now-playing img {
     .container {
         width: calc(100% - 70px);
     }
+    .container .cta-upgrade {
+        width: calc(100% - 70px);
+    }
     .container .suggested .song {
         width: calc(100% / 2 - 10px);
     }
@@ -667,6 +667,12 @@ footer .now-playing img {
     }
     #foot-left .now-playing .now-actions {
         margin: 0px;
+    }
+}
+
+@media (max-width: 430px) {
+    .container .suggested .song {
+        width: calc(90%);
     }
 }
 
