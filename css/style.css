@@ -652,6 +652,10 @@ footer .now-playing img {
     footer {
         height: 120px;
     }
+    footer .now-txt {
+        padding-left: 0px;
+        text-align: center;
+    }
     #foot-left .now-playing {
         flex-direction: column;
         flex-wrap: wrap;
