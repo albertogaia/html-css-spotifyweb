@@ -7,6 +7,23 @@
     body {
         font-family: 'Montserrat', sans-serif;
     }
+    /* TOLGO IL FLOAT AVENDO UTILIZZATO FLEX */
+    
+    .container {
+        width: calc(100% - 250px);
+        height: 100%;
+        overflow-y: scroll;
+        background-color: rgb(20, 19, 34);
+    }
+    
+    .control-panel {
+        max-width: 250px;
+        justify-content: space-between;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+        position: relative;
+    }
     /* COMMON */
     
     .wrapper {
@@ -36,14 +53,6 @@
         height: calc(100vh - 100px);
     }
     
-    .container {
-        width: calc(100% - 250px);
-        /* float: left; */
-        height: 100%;
-        overflow-y: scroll;
-        background-color: rgb(20, 19, 34);
-    }
-    
     h2,
     h3 {
         font-weight: 800;
@@ -60,16 +69,6 @@
     /* FINE COMMON */
     /* MAIN */
     /* SIDEBAR */
-    
-    .control-panel {
-        max-width: 250px;
-        /* float: left; */
-        justify-content: space-between;
-        height: 100%;
-        background: #000;
-        overflow: hidden;
-        position: relative;
-    }
     
     .top-menu {
         overflow: hidden;
@@ -369,8 +368,8 @@
         justify-content: space-between;
         align-items: center;
         background-color: rgb(52, 52, 52);
-        position: fixed;
-        bottom: 0;
+        /* position: fixed;
+        bottom: 0; */
         z-index: 999;
     }
     
