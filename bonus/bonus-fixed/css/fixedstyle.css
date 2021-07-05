@@ -27,7 +27,7 @@
     }
     
     .control-panel {
-        max-width: 250px;
+        width: 250px;
         position: fixed;
         left: 0;
         justify-content: space-between;
