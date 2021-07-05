@@ -10,11 +10,18 @@
     /* COMMON */
     
     .wrapper { height: 100vh; width: 100%; }
+
+    .wrapper a {
+        color: white;
+    }
     
     .wrapper main p,
     .wrapper main a { text-decoration: none; opacity: 0.6; }
     
-    .wrapper a:hover { opacity: 1; }
+    .wrapper main a:hover, 
+    .wrapper main a:active, 
+    .wrapper main a:focus {color: rgba(255, 255, 255, 1); opacity: 1; }
+
     
     .clearfix::after { content: ''; display: table; clear: both;}
     
@@ -41,10 +48,6 @@
     h2,
     h3 {
         font-weight: 800;
-        color: white;
-    }
-    
-    .wrapper a {
         color: white;
     }
     
